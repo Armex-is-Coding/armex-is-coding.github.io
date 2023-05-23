@@ -5,226 +5,234 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Armex is Coding - Powering Gaming Assistant AI</title>
-  <link rel="icon" href="https://raw.githubusercontent.com/Armex-is-Coding/armex-is-coding.github.io/main/img/favicon.png" type="image/x-icon">
+  <link rel="icon"
+    href="https://raw.githubusercontent.com/Armex-is-Coding/armex-is-coding.github.io/main/img/favicon.png"
+    type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
-        background-color: #1c1c1c;
-        color: #f0f0f0;
-        font-family: 'Poppins', Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh; /* Set minimum height to full viewport height */
-        background-image: url("https://raw.githubusercontent.com/Armex-is-Coding/armex-is-coding.github.io/main/img/background.jpg");
-        background-size: cover;
-        
+      background-color: #1c1c1c;
+      color: #f0f0f0;
+      font-family: 'Poppins', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      /* Set minimum height to full viewport height */
+      background-image: url("https://raw.githubusercontent.com/Armex-is-Coding/armex-is-coding.github.io/main/img/background.jpg");
+      background-size: cover;
+
     }
 
     .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.93); /* Adjust the alpha value to control darkness */
-        z-index: -1;
-}
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.93);
+      /* Adjust the alpha value to control darkness */
+      z-index: -1;
+    }
 
-header {
-    background-color: #0e0e0e;
-    padding: 20px;
-}
+    header {
+      background-color: #0e0e0e;
+      padding: 20px;
+    }
 
-h1 {
-    color: #f0f0f0;
-    margin: 0;
-}
+    h1 {
+      color: #f0f0f0;
+      margin: 0;
+    }
 
-.welcome-title {
-text-align: center;
-margin-top: 20px;
-margin-bottom: 20px;
-}
+    .welcome-title {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
 
-nav {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-}
+    nav {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 0;
+    }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    text-align: center;
-}
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      text-align: center;
+    }
 
-nav ul li {
-    display: inline;
-}
+    nav ul li {
+      display: inline;
+    }
 
-nav ul li a {
-    color: #f0f0f0;
-    text-decoration: none;
-    padding: 10px;
-}
+    nav ul li a {
+      color: #f0f0f0;
+      text-decoration: none;
+      padding: 10px;
+    }
 
-nav ul li a:hover {
-    background-color: #333;
-}
+    nav ul li a:hover {
+      background-color: #333;
+    }
 
-main {
-    flex: 1; /* Take remaining vertical space */
-}
+    main {
+      flex: 1;
+      /* Take remaining vertical space */
+    }
 
-section {
-    padding: 50px 0;
-    text-align: center;
-}
+    section {
+      padding: 50px 0;
+      text-align: center;
+    }
 
-section h2 {
-    margin-bottom: 20px;
-}
+    section h2 {
+      margin-bottom: 20px;
+    }
 
-section ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-text-align: left;
-}
+    section ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+    }
 
-section ul li:before {
-  content: "+";
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-
-section li {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-section li span {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#twitch-discord {
-  background-color: #0e0e0e;
-  padding: 50px 0;
-  text-align: center;
-}
-
-.section-content {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.section-item {
-  flex-basis: 45%;
-  margin-bottom: 30px;
-}
-
-.section-item h2 {
-  margin-bottom: 10px;
-}
-
-.section-item p {
-  text-align: justify;
-}
+    section ul li:before {
+      content: "+";
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
 
 
-.container {
-    max-width: 1200px; /* Adjust this value to set the desired width */
-    margin: 0 auto; /* Center the section horizontally */
-  }
+    section li {
+      margin-bottom: 10px;
+      text-align: center;
+    }
 
-footer {
-    background-color: #0e0e0e;
-    padding: 20px;
-    text-align: center;
-}
+    section li span {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: left;
+    }
 
-footer p {
-    margin: 0;
-}
+    #twitch-discord {
+      background-color: #0e0e0e;
+      padding: 50px 0;
+      text-align: center;
+    }
 
-/* Mobile Styles */
-@media (max-width: 767px) {
-  #wide-image {
-    padding: 20px 0;
-  }
+    .section-content {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
 
-  #wide-image img {
-    max-width: 100%;
-    height: auto;
-  }
-}
+    .section-item {
+      flex-basis: 45%;
+      margin-bottom: 30px;
+    }
 
-#feature-images .container {
-    text-align: center;
-  }
+    .section-item h2 {
+      margin-bottom: 10px;
+    }
 
-  .image-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
+    .section-item p {
+      text-align: justify;
+    }
 
-  .feature-image {
-    flex: 1 1 300px;
-    text-align: center;
-    max-width: 100%;
-  }
 
-  .support-button {
-    z-index: 500;
-    color: #000;
-    letter-spacing: -1px;
-    text-shadow: none;
-    cursor: pointer;
-    background-color: #0f325f;
-    border-radius: 30px;
-    margin-bottom: 5px;
-    margin-right: 5px;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    transition: all .2s;
-    display: inline-block;
-    position: relative;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0,0,0,.67);
-  }
+    .container {
+      max-width: 1200px;
+      /* Adjust this value to set the desired width */
+      margin: 0 auto;
+      /* Center the section horizontally */
+    }
 
-  .support-button:hover {
-    color: #080606;
-    text-shadow: none;
-    background-color: #fff;
-  }
+    footer {
+      background-color: #0e0e0e;
+      padding: 20px;
+      text-align: center;
+    }
 
-  .support-button a {
-    color: inherit;
-    text-decoration: none;
-  }
+    footer p {
+      margin: 0;
+    }
 
+    /* Mobile Styles */
+    @media (max-width: 767px) {
+      #wide-image {
+        padding: 20px 0;
+      }
+
+      #wide-image img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    #feature-images .container {
+      text-align: center;
+    }
+
+    .image-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .feature-image {
+      flex: 1 1 300px;
+      text-align: center;
+      max-width: 100%;
+    }
+
+    .support-button {
+      z-index: 500;
+      color: #000;
+      letter-spacing: -1px;
+      text-shadow: none;
+      cursor: pointer;
+      background-color: #0f325f;
+      border-radius: 30px;
+      margin-bottom: 5px;
+      margin-right: 5px;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      transition: all .2s;
+      display: inline-block;
+      position: relative;
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, .67);
+    }
+
+    .support-button:hover {
+      color: #080606;
+      text-shadow: none;
+      background-color: #fff;
+    }
+
+    .support-button a {
+      color: inherit;
+      text-decoration: none;
+    }
   </style>
 </head>
 
 <body>
-    <div class="overlay"></div>
+  <div class="overlay"></div>
   <header>
     <h1>Armex is Coding.</h1>
     <nav>
@@ -240,92 +248,117 @@ footer p {
 
   <main>
     <h1 class="welcome-title">Armex introduces you to <u>the BAR Bot</u></h1>
-    
+
     <section id="image-section">
-        <div class="container">
-          <img src="https://github.com/Armex-is-Coding/armex-is-coding.github.io/blob/main/img/intro.png?raw=true" alt="BAR Bot Intro">
-        </div>
-      </section>
+      <div class="container">
+        <img src="https://github.com/Armex-is-Coding/armex-is-coding.github.io/blob/main/img/intro.png?raw=true"
+          alt="BAR Bot Intro">
+      </div>
+    </section>
 
 
     <section id="home">
-        <div class="container">
-          <p>Armex is a passionate developer dedicated to revolutionizing the gaming experience. With a vision to provide gamers with cutting-edge assistance, Armex has created the BAR Bot, a state-of-the-art gaming assistant AI powered by OpenAI.</p>
-          <p>The BAR Bot is meticulously designed to elevate your gaming sessions at Beyond All Reason to new heights. With its advanced capabilities and intelligent algorithms, the BAR Bot offers real-time tips, strategies, and personalized recommendations tailored to your unique playstyle.</p>
-          <p>Armex's commitment to innovation ensures that the BAR Bot stays at the forefront of gaming technology. Constantly evolving and learning, the BAR Bot adapts to your needs, empowering you to overcome challenges, maximize your performance, and unlock your true gaming potential.</p>
-          <p>Discover the power of the BAR Bot and embark on a gaming journey like no other. Prepare for an immersive experience filled with invaluable assistance, enhanced gameplay, and the thrill of conquering new horizons.</p>
-        </div>
+      <div class="container">
+        <p>Armex is a passionate developer dedicated to revolutionizing the gaming experience. With a vision to provide
+          gamers with cutting-edge assistance, Armex has created the BAR Bot, a state-of-the-art gaming assistant AI
+          powered by OpenAI.</p>
+        <p>The BAR Bot is designed to elevate your gaming sessions at Beyond All Reason. The bot offers tips, strategies, and
+          personalized recommendations tailored to your unique playstyle.</p>
+        <p>Armex's commitment to innovation ensures that the BAR Bot stays at the forefront of gaming technology.
+        </p>
+      </div>
     </section>
 
     <section id="wide-image">
-        <div class="container">
-          <img src="https://raw.githubusercontent.com/Armex-is-Coding/armex-is-coding.github.io/main/img/twitch_chat.png" alt="Wide Image">
-        </div>
+      <div class="container">
+        <img src="https://raw.githubusercontent.com/Armex-is-Coding/armex-is-coding.github.io/main/img/twitch_chat.png"
+          alt="Wide Image">
+      </div>
     </section>
 
     <section id="features">
-        <div class="container">
-          <h2><i class="fas fa-cogs"></i> Features</h2>
-          <ul>
-            <li>Real-time player statistics and game data</li>
-            <li>Personalized recommendations tailored to your gaming preferences</li>
-            <li>Seamless integration with a wide range of gaming and communication platforms: Twitch, Discord, ...</li>
-            <li>Active community engagement, allowing interaction with fellow gamers</li>
-          </ul>
-        </div>
-      </section>
-      
-      <section id="feature-images">
-        <div class="container">
-          <h2><i class="fas fa-search"></i> Explore the Features</h2>
-          <div class="image-row">
-            <div class="feature-image">
-              <img src="https://raw.githubusercontent.com/Armex-is-Coding/armex-is-coding.github.io/main/img/whois.png" alt="Real-time Stats">
-              <p><i class="fas fa-chart-line"></i> Real-time player statistics and game data</p>
-            </div>
-            <div class="feature-image">
-              <img src="https://raw.githubusercontent.com/Armex-is-Coding/armex-is-coding.github.io/main/img/gpt-2.png" alt="Personalized Recommendations">
-              <p><i class="fas fa-lightbulb"></i> Personalized recommendations tailored to your gaming preferences</p>
-            </div>
-            <div class="feature-image">
-              <img src="https://raw.githubusercontent.com/Armex-is-Coding/armex-is-coding.github.io/main/img/various.png" alt="Platform Integration">
-              <p><i class="fas fa-microphone"></i> Seamless integration with a wide range of gaming and communication platforms</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div class="container">
+        <h2><i class="fas fa-cogs"></i> Features</h2>
+        <ul>
+          <li>Real-time player statistics and game data</li>
+          <li>Personalized recommendations tailored to your gaming preferences</li>
+          <li>Seamless integration with a wide range of gaming and communication platforms: Twitch, Discord, ...</li>
+          <li>Active community engagement, allowing interaction with fellow gamers</li>
+        </ul>
+      </div>
+    </section>
 
-      <section id="twitch-discord">
-        <div class="container">
-          <div class="section-content">
-            <div id="twitch" class="section-item">
-              <h2><i class="fab fa-twitch"></i> Twitch Integration</h2>
-              <p>With the Twitch integration, BARBot takes your live streaming experience to the next level. Engage your viewers in exciting ways as they interact with the AI, request real-time information about the game being played and streamed, and receive personalized recommendations tailored to their preferences.</p>
-              <p>Immerse your audience in captivating gameplay discussions, provide them with valuable insights, and keep them entertained throughout the stream. The Twitch integration with the BAR Bot transforms your live streams into interactive experiences, fostering a strong and engaged community of viewers.</p>    
-            </div>
-            <div id="discord" class="section-item">
-              <h2><i class="fab fa-discord"></i> Discord Integration</h2>
-              <p>BARBot is fully integrated with Discord, empowering you to seamlessly interact with the AI directly from your server. Take advantage of real-time game information, and immerse yourself in thrilling gaming discussions with fellow players.</p>
-              <p>Stay informed about in-game updates, and access a wide range of features designed to enhance your gaming experience. The BAR Bot becomes an invaluable companion, assisting you every step of the way, whether you're strategizing, seeking tips, or engaging in vibrant gaming conversations.</p>
-       </div>
+    <section id="feature-images">
+      <div class="container">
+        <h2><i class="fas fa-search"></i> Explore the Features</h2>
+        <div class="image-row">
+          <div class="feature-image">
+            <img src="https://raw.githubusercontent.com/Armex-is-Coding/armex-is-coding.github.io/main/img/whois.png"
+              alt="Real-time Stats">
+            <p><i class="fas fa-chart-line"></i> Real-time player statistics and game data</p>
+          </div>
+          <div class="feature-image">
+            <img src="https://raw.githubusercontent.com/Armex-is-Coding/armex-is-coding.github.io/main/img/gpt-2.png"
+              alt="Personalized Recommendations">
+            <p><i class="fas fa-lightbulb"></i> Personalized recommendations tailored to your gaming preferences</p>
+          </div>
+          <div class="feature-image">
+            <img src="https://raw.githubusercontent.com/Armex-is-Coding/armex-is-coding.github.io/main/img/various.png"
+              alt="Platform Integration">
+            <p><i class="fas fa-microphone"></i> Seamless integration with a wide range of gaming and communication
+              platforms</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
+    <section id="twitch-discord">
+      <div class="container">
+        <div class="section-content">
+          <div id="twitch" class="section-item">
+            <h2><i class="fab fa-twitch"></i> Twitch Integration</h2>
+            <p>With the Twitch integration, BARBot takes your live streaming experience to the next level. Engage your
+              viewers in exciting ways as they interact with the AI, request real-time information about the game being
+              played and streamed, and receive personalized recommendations tailored to their preferences.</p>
+            <p>Immerse your audience in captivating gameplay discussions, provide them with valuable insights, and keep
+              them entertained throughout the stream. The Twitch integration with the BAR Bot transforms your live
+              streams into interactive experiences, fostering a strong and engaged community of viewers.</p>
+          </div>
+          <div id="discord" class="section-item">
+            <h2><i class="fab fa-discord"></i> Discord Integration</h2>
+            <p>BARBot is fully integrated with Discord, empowering you to seamlessly interact with the AI directly from
+              your server. Take advantage of real-time game information, and immerse yourself in thrilling gaming
+              discussions with fellow players.</p>
+            <p>Stay informed about in-game updates, and access a wide range of features designed to enhance your gaming
+              experience. The BAR Bot becomes an invaluable companion, assisting you every step of the way, whether
+              you're strategizing, seeking tips, or engaging in vibrant gaming conversations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="support">
-        <div class="container">
-          <h2><i class="fas fa-hand-holding-usd"></i> Support the Bot</h2>
-          <p>If you find the BAR Bot incredibly valuable and want to contribute to its continuous development and improvement, you can support us by making a donation. Your support helps us maintain and enhance the features of the BAR Bot, ensuring its availability and effectiveness for all users.</p>
-          <p>By supporting the bot, you also gain the ability to request personalized memory from the AI. This means you can ask the bot to remember specific information about you, your gaming preferences, or any other details you find relevant. The bot will then utilize this memory to provide you with a more tailored and personalized experience.</p>
-          <div class="support-image">
-            <img src="https://raw.githubusercontent.com/Armex-is-Coding/armex-is-coding.github.io/main/img/supporter.png" alt="Support the Bot">
-          </div>          
-          <p>We greatly appreciate your support, as it enables us to continue delivering a high-quality gaming assistant AI and making it even better with each update. Together, we can shape the future of gaming assistance and create an exceptional gaming experience for all.</p>
-          <div class="support-button">
-            <a href="https://www.paypal.me/armexiscoding" target="_blank">Support Now</a>
-          </div>
+      <div class="container">
+        <h2><i class="fas fa-hand-holding-usd"></i> Support the Bot</h2>
+        <p>If you find the BAR Bot incredibly valuable and want to contribute to its continuous development and
+          improvement, you can support us by making a donation. Your support helps us maintain and enhance the features
+          of the BAR Bot, ensuring its availability and effectiveness for all users.</p>
+        <p>By supporting the bot, you also gain the ability to request personalized memory from the AI. This means you
+          can ask the bot to remember specific information about you, your gaming preferences, or any other details you
+          find relevant. The bot will then utilize this memory to provide you with a more tailored and personalized
+          experience.</p>
+        <div class="support-image">
+          <img src="https://raw.githubusercontent.com/Armex-is-Coding/armex-is-coding.github.io/main/img/supporter.png"
+            alt="Support the Bot">
         </div>
-      </section>
+        <p>We greatly appreciate your support, as it enables us to continue delivering a high-quality gaming assistant
+          AI and making it even better with each update. Together, we can shape the future of gaming assistance and
+          create an exceptional gaming experience for all.</p>
+        <div class="support-button">
+          <a href="https://www.paypal.me/armexiscoding" target="_blank">Support Now</a>
+        </div>
+      </div>
+    </section>
 
   </main>
 
