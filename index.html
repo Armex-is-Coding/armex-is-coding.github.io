@@ -117,6 +117,32 @@ section li span {
   text-align: left;
 }
 
+#twitch-discord {
+  background-color: #0e0e0e;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.section-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.section-item {
+  flex-basis: 45%;
+  margin-bottom: 30px;
+}
+
+.section-item h2 {
+  margin-bottom: 10px;
+}
+
+.section-item p {
+  text-align: justify;
+}
+
+
 .container {
     max-width: 1200px; /* Adjust this value to set the desired width */
     margin: 0 auto; /* Center the section horizontally */
@@ -269,23 +295,22 @@ footer p {
         </div>
       </section>
 
-    <section id="twitch">
+      <section id="twitch-discord">
         <div class="container">
-          <h2><i class="fab fa-twitch"></i> Twitch Integration</h2>
-          <p>With the Twitch integration, BARBot takes your live streaming experience to the next level. Engage your viewers in exciting ways as they interact with the AI, request real-time information about the game being played and streamed, and receive personalized recommendations tailored to their preferences.</p>
-          <p>Immerse your audience in captivating gameplay discussions, provide them with valuable insights, and keep them entertained throughout the stream. The Twitch integration with the BAR Bot transforms your live streams into interactive experiences, fostering a strong and engaged community of viewers.</p>
-      </div>
-    </section>
-
-    <section id="discord">
-      <div class="container">
-        <h2><i class="fab fa-discord"></i> Discord Integration</h2>
-        <p>BARBot is fully integrated with Discord, empowering you to seamlessly interact with the AI directly from your server. Take advantage of real-time game information, and immerse yourself in thrilling gaming discussions with fellow players.</p>
-        <p>Stay informed about in-game updates, and access a wide range of features designed to enhance your gaming experience. The BAR Bot becomes an invaluable companion, assisting you every step of the way, whether you're strategizing, seeking tips, or engaging in vibrant gaming conversations.</p>
-    </div>
-    </section>
-
-
+          <div class="section-content">
+            <div id="twitch" class="section-item">
+              <h2><i class="fab fa-twitch"></i> Twitch Integration</h2>
+              <p>With the Twitch integration, BARBot takes your live streaming experience to the next level. Engage your viewers in exciting ways as they interact with the AI, request real-time information about the game being played and streamed, and receive personalized recommendations tailored to their preferences.</p>
+              <p>Immerse your audience in captivating gameplay discussions, provide them with valuable insights, and keep them entertained throughout the stream. The Twitch integration with the BAR Bot transforms your live streams into interactive experiences, fostering a strong and engaged community of viewers.</p>    
+            </div>
+            <div id="discord" class="section-item">
+              <h2><i class="fab fa-discord"></i> Discord Integration</h2>
+              <p>BARBot is fully integrated with Discord, empowering you to seamlessly interact with the AI directly from your server. Take advantage of real-time game information, and immerse yourself in thrilling gaming discussions with fellow players.</p>
+              <p>Stay informed about in-game updates, and access a wide range of features designed to enhance your gaming experience. The BAR Bot becomes an invaluable companion, assisting you every step of the way, whether you're strategizing, seeking tips, or engaging in vibrant gaming conversations.</p>
+       </div>
+          </div>
+        </div>
+      </section>
 
     <section id="support">
         <div class="container">
