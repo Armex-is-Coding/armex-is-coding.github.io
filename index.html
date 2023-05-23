@@ -228,6 +228,24 @@
       color: inherit;
       text-decoration: none;
     }
+
+    .command-table {
+      margin: 0 auto; /* Center the table horizontally */
+      border-collapse: collapse; /* Remove default spacing between table cells */
+      width: 100%; /* Set the table width to 100% */
+      background-color: #ffffff00;
+    }
+
+    .command-table th,
+    .command-table td {
+      border: 1px solid #ccc; /* Add grey border lines */
+      padding: 10px; /* Add padding to table cells */
+      text-align: center; /* Center-align the content within cells */
+    }
+    .command-table tbody tr:not(:last-child) {
+      margin-bottom: 10px; /* Increase the width between rows */
+    }
+
   </style>
 </head>
 
@@ -261,7 +279,7 @@
       <div class="container">
         <p>Armex is a passionate developer dedicated to revolutionizing the gaming experience. With a vision to provide
           gamers with cutting-edge assistance, Armex has created the BAR Bot, a state-of-the-art gaming assistant AI
-          powered by OpenAI.</p>
+          powered by OpenAI. The bot is not officially affiliated to the game Beyond All Reason.</p>
         <p>The BAR Bot is designed to elevate your gaming sessions at Beyond All Reason. The bot offers tips, strategies, and
           personalized recommendations tailored to your unique playstyle.</p>
         <p>Armex's commitment to innovation ensures that the BAR Bot stays at the forefront of gaming technology.
@@ -336,6 +354,60 @@
         </div>
       </div>
     </section>
+
+    <section id="commands">
+      <div class="container">
+        <h2><i class="fas fa-terminal"></i> Bot Commands</h2>
+        <table class="command-table">
+          <thead>
+            <tr>
+              <th>Command</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>?help</td>
+              <td>Displays the list of available commands.</td>
+            </tr>
+            <tr>
+              <td>?whois PlaYer_NAmE</td>
+              <td>Shows the player's statistics of Beyond All Reason.</td>
+            </tr>
+            <tr>
+              <td>?ask</td>
+              <td>Ask a question to the BAR Bot AI. The question needs to be related to Beyond All Reason.</td>
+            </tr>
+            <tr>
+              <td>?online [PlaYer_NAmE]</td>
+              <td>Shows online players in the battles context. It counts player in lobby, playing, connecting, spectating. Adding the PlaYer_NAmE show if the online status and location.</td>
+            </tr>
+            <tr>
+              <td>?replay PlaYer_NAmE</td>
+              <td>Shows the last player's replay.</td>
+            </tr>
+            <tr>
+              <td>?setratings</td>
+              <td>Shows the command to set the rating.</td>
+            </tr>
+            <tr>
+              <td>?channels</td>
+              <td>Shows where the bot is deployed.</td>
+            </tr>
+            <tr>
+              <td>?countask</td>
+              <td>Shows the number of time the command has been typed.</td>
+            </tr>
+            <tr>
+              <td>?countwhois</td>
+              <td>Shows the number of time the command has been typed.</td>
+            </tr>
+            <!-- Add more rows for additional commands -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
 
     <section id="support">
       <div class="container">
