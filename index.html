@@ -246,6 +246,48 @@
       margin-bottom: 10px; /* Increase the width between rows */
     }
 
+    .level-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.level-container table {
+  margin-top: 10px;
+}
+
+.level-container table tr:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.level-container td {
+  padding: 5px;
+}
+
+.level-container .progress-bar {
+  height: 20px;
+}
+
+/* Define the color for each progress bar */
+.level-container .progress-bar:nth-child(1) { background-color: #ff0000; }
+.level-container .progress-bar:nth-child(2) { background-color: #ffa500; }
+.level-container .progress-bar:nth-child(3) { background-color: #ffff00; }
+.level-container .progress-bar:nth-child(4) { background-color: #00ff00; }
+.level-container .progress-bar:nth-child(5) { background-color: #0000ff; }
+.level-container .progress-bar:nth-child(6) { background-color: #800080; }
+
+.level-container td:first-child {
+  width: 150px; /* Adjust the width as desired */
+  font-weight: bold; /* Make the text bold for better visibility */
+  font-size: 1.2em;
+}
+
+.level-container td:first-child span {
+  font-size: 2em; /* Set the font size to 2em for specific values */
+}
+
+
   </style>
 </head>
 
@@ -392,10 +434,6 @@
               <td>Shows the command to set the rating.</td>
             </tr>
             <tr>
-              <td>?channels</td>
-              <td>Shows where the bot is deployed.</td>
-            </tr>
-            <tr>
               <td>?countask</td>
               <td>Shows the number of time the command has been typed.</td>
             </tr>
@@ -409,6 +447,78 @@
       </div>
     </section>
 
+
+    <section id="ranking">
+      <div class="container">
+        <h2><i class="fas fa-trophy"></i> Ranking</h2>
+    
+        <div class="level-container">
+          <h2>Player Age:</h2>
+          <p>Player Age represents the number of matches a player has completed. It serves as an indicator of their experience and progress in the game. The more matches played, the higher the player's age and potential skill level.</p>
+          <table>
+            <tr>
+              <th>Matches Played</th>
+              <th>Player Age</th>
+            </tr>
+            <tr>
+              <td>1 - 50</td>
+              <td><div class="progress-bar" style="width: 10%; background-color: #ff0000;"></div>a new</td>
+            </tr>
+            <tr>
+              <td>51 - 150</td>
+              <td><div class="progress-bar" style="width: 30%; background-color: #ffa500;"></div>a rookie</td>
+            </tr>
+            <tr>
+              <td>151 - 500</td>
+              <td><div class="progress-bar" style="width: 60%; background-color: #ffff00;"></div>an experienced</td>
+            </tr>
+            <tr>
+              <td>501 - 1000</td>
+              <td><div class="progress-bar" style="width: 80%; background-color: #00ff00;"></div>a veteran</td>
+            </tr>
+            <tr>
+              <td>Above 1000</td>
+              <td><div class="progress-bar" style="width: 100%; background-color: #0000ff;"></div>a master</td>
+            </tr>
+          </table>
+        </div>
+    
+        <div class="level-container">
+          <h2>Player Skill:</h2>
+          <p>Player Skill indicates the player's current OpenSkill level, reflecting their expertise in the game. It represents the accumulated skill points earned through gameplay, measuring their proficiency. The higher the OpenSkill number, the greater the player's mastery.</p>
+          <table>
+            <tr>
+              <th>Skill Level</th>
+              <th>Player Skill</th>
+            </tr>
+            <tr>
+              <td>0.0 - 3.0</td>
+              <td><div class="progress-bar" style="width: 10%; background-color: #ff0000;"></div>terrible</td>
+            </tr>
+            <tr>
+              <td>3.1 - 12.0</td>
+              <td><div class="progress-bar" style="width: 30%; background-color: #ffa500;"></div>very noob</td>
+            </tr>
+            <tr>
+              <td>12.1 - 21.0</td>
+              <td><div class="progress-bar" style="width: 50%; background-color: #ffff00;"></div>noob</td>
+            </tr>
+            <tr>
+              <td>21.1 - 30.0</td>
+              <td><div class="progress-bar" style="width: 70%; background-color: #00ff00;"></div>good</td>
+            </tr>
+            <tr>
+              <td>30.1 - 40.0</td>
+              <td><div class="progress-bar" style="width: 90%; background-color: #0000ff;"></div>op</td>
+            </tr>
+            <tr>
+              <td>Above 40.0</td>
+              <td><div class="progress-bar" style="width: 100%; background-color: #800080;"></div>pro</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
 
     <section id="contribute">
       <div class="container">
